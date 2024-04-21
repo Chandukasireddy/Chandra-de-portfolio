@@ -316,7 +316,7 @@ export const sideBarRightMail = {
 
 export const sideBarLeftSocials = [
   {
-    link: "https://www.linkedin.com/in/chandukasireddy/y",
+    link: "https://www.linkedin.com/in/chandukasireddy/",
     icon: FiLinkedin,
     altimgname: "linkedin",
   },
