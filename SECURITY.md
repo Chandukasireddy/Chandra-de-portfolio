@@ -1,9 +1,12 @@
-# Security Policy
+## **Security Policy**
 
-## Reporting Security Issues
+### **Reporting Security Vulnerabilities**
 
-If you believe you have found a security vulnerability, we encourage you to let us know right away.
+At **Graspins**, we are deeply committed to maintaining the security of our systems and ensuring the trust of our users and partners.
 
-We will investigate all legitimate reports and do our best to quickly fix the problem.
+If you discover a potential security vulnerability, we encourage you to report it to us immediately. We value your input and will diligently investigate all legitimate reports. Our team is committed to resolving any identified issues as swiftly as possible.
 
-Email hello@alpaycelik.dev to disclose any security vulnerabilities.
+To report a security concern, please reach out to us via email at:  
+📧 **chandukasireddy02@gmail.com**
+
+Your efforts in helping us create a secure and reliable environment are greatly appreciated.
