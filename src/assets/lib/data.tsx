@@ -310,7 +310,7 @@ export const FooterLinks = [
 ] as const;
 
 export const sideBarRightMail = {
-  link: "mailto:chandukasireddy02@gmail.com",
+  link: "mailto:chandukasireddy02",
   text: "chandukasireddy02@gmail.com",
 } as const;
 
