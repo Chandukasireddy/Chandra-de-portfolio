@@ -347,49 +347,62 @@ export const quotesData = [
 export const aboutMeData = {
   title: "Über mich",
   title_EN: "About me",
-  description: "Ein paar Codeschnippsel über mich",
-  description_EN: "A few code snippets about me",
+  description: "Ein paar Abschnitte über meine Reise und Leidenschaft",
+  description_EN: "A few sections about my journey and passions",
   paragraphs_DE: [
     {
-      title: "Die Schaltkreise meines Herzens",
+      title: "Führung mit Vision und Leidenschaft",
       description:
-        "Wenn ich nicht in der digitalen Welt unterwegs bin, durchstreife ich die faszinierende Welt der Technik und Hardware. Schaltkreise und Lötstellen sind für mich wie Puzzleteile eines aufregenden Abenteuers.",
-      icon: hardwareicon,
+        "Als ehemaliger IEEE-Vorsitzender, Google DSC Community-Leiter und Gründer des Feliks Clubs habe ich meine Fähigkeit entwickelt, Teams zu inspirieren und zu stärken. Für mich bedeutet Führung, Wachstum, Zusammenarbeit und Innovation in den Gemeinschaften, denen ich diene, zu fördern.",
+      icon: leadershipicon,
     },
     {
-      title: "Auf der Überholspur des Lebens",
+      title: "Gemeinschaften aufbauen, die gedeihen",
       description:
-        "Neben dem Coden befinde ich mich gerne auf der Überholspur – im wahrsten Sinne des Wortes. Autos sind meine Leidenschaft, und ich genieße es, mit PS-starken Maschinen auf unbekannten Straßen unterwegs zu sein.",
-      icon: caricon,
+        "Meine Leidenschaft liegt darin, inklusive Gemeinschaften aufzubauen, in denen Ideen aufblühen. In meinen verschiedenen Führungsrollen habe ich erfolgreich Workshops, Veranstaltungen und kollaborative Projekte organisiert, die Neugier geweckt und Innovation inspiriert haben.",
+      icon: communityicon,
     },
     {
-      title: "Entdeckungsfreude als Lebensmotto",
+      title: "Innovation durch Handeln",
       description:
-        "Meine Reise als Webentwickler ist nur ein Teil meines Lebenswegs. Ich lebe nach dem Motto, dass das Abenteuer erst beginnt, wenn man das Bekannte hinter sich lässt. Das Entdecken neuer Orte ist meine Form der kreativen Inspiration.",
-      icon: travelicon,
+        "Die Gründung des Feliks Clubs war eine aufregende Reise voller Kreativität und Strategie. Von der Idee bis zur Umsetzung habe ich es genossen, Konzepte in umsetzbare Initiativen zu verwandeln und die Grenzen des Möglichen auszuloten.",
+      icon: innovationicon,
+    },
+    {
+      title: "Am Puls der Technologie",
+      description:
+        "Während ich führe und baue, bleibt mein Kern in der Erkundung des Potenzials der Technologie. Als Google DSC-Leiter habe ich meine technische Expertise mit Führungsqualitäten kombiniert, um Hackathons zu organisieren, Entwickler zu inspirieren und zu bedeutenden Projekten beizutragen.",
+      icon: technologyicon,
     },
   ],
   paragraphs_EN: [
     {
-      title: "The Circuits of My Heart",
+      title: "Leading with Vision and Passion",
       description:
-        "When I'm not navigating the digital world, I explore the fascinating realm of technology and hardware. Circuits and solder joints are like puzzle pieces to me in an exciting adventure.",
-      icon: hardwareicon,
+        "As a former IEEE Chair, Google DSC Community Lead, and founder of Feliks Club, I have honed my ability to inspire and empower teams. Leadership, to me, is about fostering growth, collaboration, and innovation in the communities I serve.",
+      icon: leadershipicon,
     },
     {
-      title: "On the Fast Lane of Life",
+      title: "Building Thriving Communities",
       description:
-        "Besides coding, I like to be on the fast lane - in the truest sense of the word. Cars are my passion, and I enjoy being on unknown roads with powerful machines.",
-      icon: caricon,
+        "My passion lies in creating inclusive communities where ideas flourish. In various leadership roles, I have successfully organized workshops, events, and collaborative projects that sparked curiosity and inspired innovation.",
+      icon: communityicon,
     },
     {
-      title: "The Joy of Discovery as a Life Motto",
+      title: "Innovating Through Action",
       description:
-        "My journey as a web developer is only a part of my life path. I live by the motto that the adventure only begins when you leave the familiar behind. Discovering new places and cultures is my form of creative inspiration.",
-      icon: travelicon,
+        "Founding Feliks Club was an exhilarating journey of creativity and strategy. From ideation to execution, I thrived on turning concepts into actionable initiatives and pushing the boundaries of what’s possible.",
+      icon: innovationicon,
+    },
+    {
+      title: "At the Forefront of Technology",
+      description:
+        "While leading and building, my core remains in exploring the potential of technology. As a Google DSC Lead, I merged technical expertise with leadership to organize hackathons, inspire developers, and contribute to impactful projects.",
+      icon: technologyicon,
     },
   ],
 };
+
 
 export const contactData = {
   title: {
