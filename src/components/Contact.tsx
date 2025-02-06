@@ -148,7 +148,7 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
   // // 🚀 Initiating Quantum Email Transmission 🪐
   // const launchEmail = async () => {
   //   try {
-  //     const response = await fetch('https://alpaycelik.dev/send',{
+  //     const response = await fetch('https://Chandrakiran Reddy Kasireddycelik.dev/send',{
   //     method: 'POST',
   //     headers: {'Content-Type': 'application/json'},
   //     body: JSON.stringify({

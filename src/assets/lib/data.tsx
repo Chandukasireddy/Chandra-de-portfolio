@@ -44,7 +44,7 @@ export const headerIntroData = {
   },
   subtitle: "🚧 Work in Progress.. Updates Coming Soon!",
   description: {
-    de: "Ich bin Alpay, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
+    de: "Ich bin Chandrakiran Reddy Kasireddy, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
     en: "I'm Chandrakiran Reddy Kasireddy, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
   },
   buttons: [
@@ -469,8 +469,8 @@ export const contactData = {
   },
   privacyOptIn: {
     checkbox: {
-      de: "Ich stimme zu, dass Alpay meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
-      en: "I agree that Alpay may use my personal data (name and e-mail address) to contact me.",
+      de: "Ich stimme zu, dass Chandrakiran Reddy Kasireddy meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
+      en: "I agree that Chandrakiran Reddy Kasireddy may use my personal data (name and e-mail address) to contact me.",
     },
     description: {
       de: "Durch Übermittlung dieser Anfrage bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben",
