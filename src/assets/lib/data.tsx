@@ -24,7 +24,7 @@ import wordpressicon from "../../assets/icons/wordpressicon.svg";
 import shopifyicon from "../../assets/icons/shopifyicon.svg";
 import webflowicon from "../../assets/icons/webflowicon.svg";
 import tastyMockup from "../../assets/img/HeroImage1.jpg";
-import instorMockup from "../../assets/img/instor_mockup.webp";
+import instorMockup from "../../assets/img/veduka.png";
 import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
 import profilepicture from "../img/HeroImage.jpg";
 import caricon from "../../assets/icons/car-icon.svg";
