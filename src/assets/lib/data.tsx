@@ -89,8 +89,8 @@ export const projectsData = [
       { name: "Trello", icon: trelloicon },
     ],
     image: tastyMockup,
-    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
+    deploymenturl: "https://chandu.graspins.com",
+    githuburl: "https://github.com/Chandukasireddy",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -121,9 +121,9 @@ export const projectsData = [
       { name: "Render", icon: rendericon },
     ],
     image: silentmoonMockup,
-    deploymenturl: "https://silentmoon-grpw.onrender.com/",
+    deploymenturl: "https://chandu.graspins.com/",
     githuburl:
-      "https://github.com/AlpayC/Fullstack_Abschlussprojekt_SilentMoon",
+      "https://github.com/Chandukasireddy",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -154,8 +154,8 @@ export const projectsData = [
       { name: "Trello", icon: trelloicon },
     ],
     image: instorMockup,
-    deploymenturl: "https://mern-haushaltsbuch.onrender.com/",
-    githuburl: "https://github.com/AlpayC/Furniture_MERN",
+    deploymenturl: "https://chandu.graspins.com/",
+    githuburl: "https://github.com/Chandukasireddy",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
