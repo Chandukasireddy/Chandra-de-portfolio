@@ -62,6 +62,7 @@ export const headerIntroData = {
       },
       icon: FiMail,
       color: "main-btn",
+      link: "https://www.linkedin.com/in/chandukasireddy/", // LinkedIn Profile
     },
     {
       name: "Projects",
@@ -71,8 +72,9 @@ export const headerIntroData = {
       },
       icon: FiGithub,
       color: "secondary-btn",
+      link: "https://github.com/Chandukasireddy", // GitHub Profile
     },
-  ],
+  ],  
   profilepicture: profilepicture,
 } as const;
 
