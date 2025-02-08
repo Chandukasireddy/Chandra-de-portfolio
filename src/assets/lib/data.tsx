@@ -43,11 +43,11 @@ export const headerIntroData = {
     en: "Hi, I'm Chandrakiran Reddy Kasireddy",
   },
   subtitle: (
-    <div className="overflow-hidden whitespace-nowrap w-full">
+   <div className="overflow-hidden whitespace-nowrap w-full">
       <span className="scrolling-text inline-block">
         🚧 Work in Progress.. Updates Coming Soon! 🚀
       </span>
-    </div>
+   </div>
   ),
   description: {
     de: "Ich bin Chandrakiran Reddy Kasireddy, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
