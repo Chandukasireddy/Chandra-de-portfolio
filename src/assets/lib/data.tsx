@@ -342,13 +342,13 @@ export const sideBarLeftSocials = [
 
 export const quotesData = [
   {
-    de: '"Es ist überhaupt nicht wichtig, es beim ersten Mal richtig zu machen. Es ist entscheidend, es beim letzten Mal richtig zu machen."',
-    en: `"It's not at all important to get it right the first time. It's vitally important to get it right the last time."`,
-    author: "Andrew Hunt",
+    de: '"Selbstloses Beitragen nährt wahren Erfolg, denn jede investierte Mühe kehrt auf unerwartete Weise zurück."',
+    en: `"Contributing selflessly fuels true success, for every effort given returns in ways beyond imagination."`,
+    author: "ChanduKasireddy",
   },
   {
-    de: '"Das Web ist wie eine Leinwand und der Code ist die Farbe. Erschaffe dein Meisterwerk."',
-    en: `"The web is like a canvas, and code is the paint. Create your masterpiece."`,
+    de: '"Wahrer Erfolg ist es, Wertschätzung von denen zu erhalten, die wir selbst wertschätzen."',
+    en: `"True success is receiving appreciation from those we deeply appreciate."`,
   },
 ] as const;
 
