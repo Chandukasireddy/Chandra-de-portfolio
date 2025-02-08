@@ -50,8 +50,8 @@ export const headerIntroData = {
    </div>
   ),
   description: {
-    de: "Ich bin Chandrakiran Reddy Kasireddy, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
-    en: "I'm Chandrakiran Reddy Kasireddy, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
+    de: "Ich bin Chandrakiran Reddy Kasireddy, ein KI- und Cloud-Enthusiast, der sich der Lösung realer Herausforderungen mit modernster Technologie verschrieben hat. Vom Aufbau florierender Tech-Communities bis hin zur Betreuung von Startups – ich glaube an Innovation, Zusammenarbeit und wirkungsorientiertes Wachstum!",
+    en: "I'm Chandrakiran Reddy Kasireddy, an AI and Cloud enthusiast dedicated to solving real-world challenges with cutting-edge technology. From leading thriving tech communities to mentoring startups, I believe in innovation, collaboration, and impact-driven growth!",
   },
   buttons: [
     {
