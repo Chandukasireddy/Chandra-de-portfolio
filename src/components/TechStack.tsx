@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
-import { Tooltip as ReactTooltip } from "react-tooltip";
 import { useSectionInView } from "../assets/lib/hooks";
 import {
-  skillsDataCMS,
-  skillsDataDesign,
-  skillsDataWeb,
+  skillsDataAiMl,
+  skillsDataCloud,
+  skillsDataDataScience,
+  skillsDataSoftware,
 } from "../assets/lib/data";
 import { useTheme } from "../context/theme-context";
 import { useLanguage } from "../context/language-context";
@@ -49,30 +49,18 @@ const TechStack: React.FC = () => {
             </p>
             <h2>
               {language === "DE"
-                ? "Meine Techstack und Skills"
+                ? "Mein Techstack und Skills"
                 : "My TechStack and Skills"}
             </h2>
           </motion.div>
         </div>
-        <div className="flex gap-12 lg:gap-40 justify-center max-lg:flex-col max-lg:gap-16">
-          <div className="w-1/3 max-lg:w-full">
-            <SkillSection skillsData={skillsDataWeb} theme={theme} />
-          </div>
-          <div className="flex flex-col h-[inherit] justify-around gap-12 lg:gap-40 max-lg:gap-16">
-            <SkillSection skillsData={skillsDataDesign} theme={theme} />
-            <SkillSection skillsData={skillsDataCMS} theme={theme} />
-          </div>
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-12 lg:gap-16 max-w-[1400px] mx-auto px-12 max-lg:px-0">
+          <SkillSection skillsData={skillsDataAiMl} theme={theme} />
+          <SkillSection skillsData={skillsDataCloud} theme={theme} />
+          <SkillSection skillsData={skillsDataDataScience} theme={theme} />
+          <SkillSection skillsData={skillsDataSoftware} theme={theme} />
         </div>
       </section>
-      <ReactTooltip
-        place="top"
-        id="my-tooltip"
-        style={{
-          fontSize: "1.5rem",
-          zIndex: 10,
-          backgroundColor: "var(--orange)",
-        }}
-      />
     </React.Fragment>
   );
 };

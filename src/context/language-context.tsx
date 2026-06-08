@@ -31,16 +31,19 @@ export default function LanguageContextProvider({
       document.documentElement.classList.remove("DE");
     }
 
-    const currentPath = location.pathname;
-    if (currentPath.startsWith("/en")) {
-      navigate(currentPath.replace(/^\/en/, "/de") + location.search + location.hash, { replace: true });
-    } else if (currentPath.startsWith("/de")) {
-      navigate(currentPath.replace(/^\/de/, "/en") + location.search + location.hash, { replace: true });
-    } else if (currentPath === "/") {
-      navigate(`/${nextLang.toLowerCase()}` + location.search + location.hash, { replace: true });
+    const currentTheme = document.documentElement.classList.contains("light") ? "light" : "dark";
+    let nextPath = "/";
+    if (nextLang === "DE" && currentTheme === "light") {
+      nextPath = "/de/l";
+    } else if (nextLang === "DE" && currentTheme === "dark") {
+      nextPath = "/de";
+    } else if (nextLang === "EN" && currentTheme === "light") {
+      nextPath = "/l";
     } else {
-      navigate(`/${nextLang.toLowerCase()}${currentPath}` + location.search + location.hash, { replace: true });
+      nextPath = "/";
     }
+
+    navigate(nextPath + location.search + location.hash, { replace: true });
   };
 
   useEffect(() => {
@@ -63,7 +66,11 @@ export default function LanguageContextProvider({
       }
 
       if (pathname === "/") {
-        navigate(`/${initialLanguage.toLowerCase()}` + location.search + location.hash, { replace: true });
+        const localTheme = window.localStorage.getItem("theme") as "light" | "dark" | null;
+        const initialTheme = localTheme || "dark";
+        if (initialLanguage === "DE") {
+          navigate(initialTheme === "light" ? "/de/l" : "/de", { replace: true });
+        }
       }
     }
 

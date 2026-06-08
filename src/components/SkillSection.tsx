@@ -3,12 +3,13 @@ import React from "react";
 interface Skill {
   title: string;
   hash: string;
-  icon?: any;
-  color?: any;
+  icon: React.ComponentType<{ className?: string; style?: React.CSSProperties }>;
+  color: string;
 }
 
 interface SkillCategory {
   readonly skillsTitle: string;
+  readonly image: string;
   readonly skills: readonly Skill[];
 }
 
@@ -18,87 +19,74 @@ interface SkillSectionProps {
 }
 
 const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
-  const getSkillIconSrc = (theme: string, skill: Skill) => {
-    if (
-      theme === "dark" &&
-      (skill.title.includes("Next") || skill.title.includes("Express"))
-    ) {
-      return skill.icon[1];
-    } else if (skill.title !== "Next.js" && skill.title !== "Express") {
-      return skill.icon;
-    } else {
-      return skill.icon[0];
-    }
-  };
-
-  const getSkillColor = (theme: string, skill: Skill) => {
-    if (
-      theme === "dark" &&
-      (skill.title.includes("Next") || skill.title.includes("Express"))
-    ) {
-      return skill.color[1];
-    } else if (skill.title !== "Next.js" && skill.title !== "Express") {
-      return skill.color;
-    } else {
-      return skill.color[0];
-    }
-  };
+  const category = skillsData[0];
 
   return (
     <article
-      className={`h-auto rounded-2xl p-16 pt-32 grid grid-cols-3 gap-10 relative z-10 max-lg:w-full max-lg:grid-cols-2 max-lg:p-8  max-lg:pt-32 ${
+      className={`h-auto rounded-3xl p-8 pt-10 flex flex-col gap-8 relative z-10 transition-all duration-500 overflow-hidden border ${
         theme === "dark"
-          ? "bg-[--blackblue] dark-mode-shadow"
-          : "bg-[--icewhite] dark-shadow"
+          ? "bg-[--blackblue]/80 border-white/5 dark-mode-shadow"
+          : "bg-[--icewhite]/80 border-black/5 dark-shadow"
       }`}
     >
-      <div
-        className={`absolute top-10 left-1/2 transform -translate-x-1/2 px-4 py-2  rounded-t-xl `}
-      >
-        <p className="font-black text-2xl sm:text-3xl lg:text-4xl">
-          <span className="text-[--orange]">&lt;</span>
-          {skillsData[0].skillsTitle}
-          <span className="text-[--orange]">/&gt;</span>
-        </p>
-      </div>
-      {skillsData[0].skills.map((skill, index) => (
-        <div
-          key={index}
-          className={`skill-item cursor-pointer flex flex-col gap-6 rounded-2xl p-8 border-solid border-[0.25rem]  text-center max-lg:items-center    ${
-            theme === "dark" ? "bg-[--darkblue]" : "bg-[--icewhite]"
-          }`}
-          data-tooltip-id="my-tooltip"
-          data-tooltip-content={skill.title}
-          style={{
-            borderColor: getSkillColor(theme, skill),
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.animation = "pulse 2s infinite";
-            e.currentTarget.style.transform = "scale(1)";
-            document.documentElement.style.setProperty(
-              "--box-shadow-color",
-              `${getSkillColor(theme, skill)}b3`
-            );
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.animation = "";
-            e.currentTarget.style.transform = "";
-            document.documentElement.style.setProperty(
-              "--box-shadow-color",
-              "inherit"
-            );
-          }}
-        >
-          <img
-            src={getSkillIconSrc(theme, skill)}
-            alt={`${skill.icon}-icon`}
-            className="h-[5rem] sm:h-[7rem] md:h-[8rem] lg:h-[10rem] object-contain"
-          />
-          <h3 className="text-[1.4rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2rem] min-[1024px]:hidden">
-            {skill.title}
-          </h3>
+      {/* Header section with Category name and Isometric metallic block */}
+      <div className="flex justify-between items-center gap-6 pb-6 border-b border-white/5">
+        <div className="text-left">
+          <p className={`font-black text-2xl sm:text-3xl lg:text-4xl ${theme === "dark" ? "text-white" : "text-black"}`}>
+            <span className="text-[--orange]">&lt;</span>
+            {category.skillsTitle}
+            <span className="text-[--orange]">/&gt;</span>
+          </p>
         </div>
-      ))}
+        <div className="relative group flex-shrink-0">
+          <div className="absolute -inset-1 bg-gradient-to-r from-[--orange] to-blue-500 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+          <img
+            src={category.image}
+            alt={`${category.skillsTitle} Isometric`}
+            className="relative w-16 h-16 sm:w-20 sm:h-20 object-contain transform group-hover:scale-110 transition-transform duration-500"
+          />
+        </div>
+      </div>
+
+      {/* Chips/Badges list */}
+      <div className="flex flex-wrap gap-4 justify-start">
+        {category.skills.map((skill, index) => {
+          const Icon = skill.icon;
+          return (
+            <div
+              key={index}
+              className={`skill-chip flex items-center gap-3 py-2 px-4 rounded-full border text-[1.3rem] font-semibold transition-all duration-300 ${
+                theme === "dark"
+                  ? "bg-white/5 border-white/10 text-white/80 hover:text-white"
+                  : "bg-black/5 border-black/10 text-black/80 hover:text-black"
+              }`}
+              style={{
+                borderColor: `${skill.color}33`,
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = skill.color;
+                e.currentTarget.style.backgroundColor = `${skill.color}15`;
+                e.currentTarget.style.transform = "translateY(-2px)";
+                e.currentTarget.style.boxShadow = `0 4px 12px ${skill.color}33`;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = `${skill.color}33`;
+                e.currentTarget.style.backgroundColor = "";
+                e.currentTarget.style.transform = "";
+                e.currentTarget.style.boxShadow = "";
+              }}
+            >
+              {Icon && (
+                <Icon
+                  className="w-6 h-6 transition-transform duration-300"
+                  style={{ color: skill.color }}
+                />
+              )}
+              <span>{skill.title}</span>
+            </div>
+          );
+        })}
+      </div>
     </article>
   );
 };

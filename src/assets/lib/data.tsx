@@ -1,18 +1,11 @@
-import adobexdicon from "../../assets/icons/adobexdicon.png";
-import canvaicon from "../../assets/icons/canvaicon.png";
-import figmaicon from "../../assets/icons/figmaicon.png";
 import htmlicon from "../../assets/icons/htmlicon.png";
 import cssicon from "../../assets/icons/cssicon.png";
 import javascripticon from "../../assets/icons/javascripticon.png";
-import typescripticon from "../../assets/icons/typescripticon.png";
 import reacticon from "../../assets/icons/reacticon.png";
-import nextjsicon from "../../assets/icons/nextjsicon.png";
 import nodejsicon from "../../assets/icons/nodejsicon.png";
-import tailwindcssicon from "../../assets/icons/tailwindicon.png";
 import mongodbicon from "../../assets/icons/mongoicon.png";
-import vuejsicon from "../../assets/icons/vueicon.png";
-import expressicon from "../../assets/icons/expressicon.png";
-import sassscssicon from "../../assets/icons/sassicon.png";
+import figmaicon from "../../assets/icons/figmaicon.png";
+import canvaicon from "../../assets/icons/canvaicon.png";
 import trelloicon from "../../assets/icons/trelloicon.svg";
 import apiicon from "../../assets/icons/apiicon.svg";
 import axiosicon from "../../assets/icons/axiosicon.svg";
@@ -20,9 +13,8 @@ import spotifyicon from "../../assets/icons/spotifyicon.svg";
 import netlifyicon from "../../assets/icons/netlifyicon.svg";
 import rendericon from "../../assets/icons/rendericon.svg";
 import jwticon from "../../assets/icons/jwticon.svg";
-import wordpressicon from "../../assets/icons/wordpressicon.png";
-import shopifyicon from "../../assets/icons/shopifyicon.png";
-import webflowicon from "../../assets/icons/webflowicon.png";
+import expressiconwhite from "../../assets/icons/expressicon.png";
+
 import tastyMockup from "../../assets/img/HeroImage1.jpg";
 import instorMockup from "../../assets/img/veduka.png";
 import silentmoonMockup from "../../assets/img/HR-IT.webp";
@@ -30,12 +22,54 @@ import profilepicture from "../img/HeroImage.jpg";
 import caricon from "../../assets/icons/car-icon.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
 import hardwareicon from "../../assets/icons/hardware-icon.svg";
-import nextjsiconwhite from "../../assets/icons/nextjsicon.png";
-import expressiconwhite from "../../assets/icons/expressicon.png";
 import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
 import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
 import Imprint from "../../components/Imprint";
 import Privacy from "../../components/Privacy";
+
+// Generated isometric images
+import aiMlIsometric from "../img/ai_ml_isometric.png";
+import cloudIsometric from "../img/cloud_isometric.png";
+import dataScienceIsometric from "../img/data_science_isometric.png";
+import softwareDevIsometric from "../img/software_dev_isometric.png";
+
+import {
+  SiAmazonaws,
+  SiGooglecloud,
+  SiMicrosoftazure,
+  SiFirebase,
+  SiOracle,
+  SiPowerbi,
+  SiTableau,
+  SiPython,
+  SiJavascript,
+  SiNodedotjs,
+  SiGit,
+  SiDocker,
+  SiGithubactions,
+  SiCplusplus,
+  SiAnaconda,
+  SiOpenai,
+  SiPostgresql
+} from "react-icons/si";
+
+import {
+  TbRobot,
+  TbLink,
+  TbServer,
+  TbMathFunction,
+  TbVector,
+  TbMessageCode,
+  TbEye,
+  TbSearch,
+  TbInfinity,
+  TbSettingsAutomation,
+  TbBinaryTree,
+  TbDatabaseSearch,
+  TbChartHistogram,
+  TbChartPie,
+  TbAdjustments
+} from "react-icons/tb";
 
 export const headerIntroData = {
   title: {
@@ -182,124 +216,71 @@ export const liveTickerData = {
   },
 } as const;
 
-export const skillsDataWeb = [
+export const skillsDataAiMl = [
   {
-    skillsTitle: "WebDevelopment",
+    skillsTitle: "AI & Machine Learning",
+    image: aiMlIsometric,
     skills: [
-      {
-        title: "HTML",
-        hash: "#html",
-        icon: htmlicon,
-        color: "#F1662A",
-      },
-      {
-        title: "CSS",
-        hash: "#CSS",
-        icon: cssicon,
-        color: "#1572B6",
-      },
-      {
-        title: "JavaScript",
-        hash: "#JavaScript",
-        icon: javascripticon,
-        color: "#F7DF1E",
-      },
-      {
-        title: "TypeScript",
-        hash: "#TypeScript",
-        icon: typescripticon,
-        color: "#007ACC",
-      },
-      {
-        title: "React",
-        hash: "#React",
-        icon: reacticon,
-        color: "#61DAFB",
-      },
-      {
-        title: "Next.js",
-        hash: "#Next.js",
-        icon: [nextjsicon, nextjsiconwhite],
-        color: ["#000000", "#FFFFFF"],
-      },
-      {
-        title: "Node.js",
-        hash: "#Node.js",
-        icon: nodejsicon,
-        color: "#339933",
-      },
-      {
-        title: "Tailwind",
-        hash: "#Tailwind",
-        icon: tailwindcssicon,
-        color: "#38B2AC",
-      },
-      {
-        title: "MongoDB",
-        hash: "#MongoDB",
-        icon: mongodbicon,
-        color: "#449C45",
-      },
-      {
-        title: "Vue.js",
-        hash: "#Vue.js",
-        icon: vuejsicon,
-        color: "#4FC08D",
-      },
-      {
-        title: "Express",
-        hash: "#Express",
-        icon: [expressicon, expressiconwhite],
-        color: ["#000000", "#FFFFFF"],
-      },
-      {
-        title: "SASS/SCSS",
-        hash: "#SASS/SCSS",
-        icon: sassscssicon,
-        color: "#CC6699",
-      },
+      { title: "Generative AI & LLMs", hash: "#genai", icon: SiOpenai, color: "#412991" },
+      { title: "Agentic AI", hash: "#agentic", icon: TbRobot, color: "#FF9900" },
+      { title: "LangChain", hash: "#langchain", icon: TbLink, color: "#1C3C3A" },
+      { title: "Agno", hash: "#agno", icon: TbSettingsAutomation, color: "#00C4CC" },
+      { title: "LLM Fine-Tuning", hash: "#finetuning", icon: TbAdjustments, color: "#FF007F" },
+      { title: "Agentic RAG", hash: "#agenticrag", icon: TbDatabaseSearch, color: "#0080FF" },
+      { title: "Graph RAG", hash: "#graphrag", icon: TbBinaryTree, color: "#FF3366" },
+      { title: "NLP", hash: "#nlp", icon: TbMessageCode, color: "#9933FF" },
+      { title: "Computer Vision", hash: "#computervision", icon: TbEye, color: "#33CC99" },
+      { title: "Semantic Search", hash: "#semanticsearch", icon: TbSearch, color: "#E67E22" },
+      { title: "Embeddings", hash: "#embeddings", icon: TbVector, color: "#2980B9" },
     ],
   },
 ] as const;
 
-export const skillsDataDesign = [
+export const skillsDataCloud = [
   {
-    skillsTitle: "Design",
+    skillsTitle: "Cloud Technologies",
+    image: cloudIsometric,
     skills: [
-      { title: "Figma", hash: "#Figma", icon: figmaicon, color: "#F24E1E" },
-      {
-        title: "Adobe XD",
-        hash: "#Adobe XD",
-        icon: adobexdicon,
-        color: "#FF61F6",
-      },
-      { title: "Canva", hash: "#Canva", icon: canvaicon, color: "#00C4CC" },
+      { title: "AWS", hash: "#aws", icon: SiAmazonaws, color: "#FF9900" },
+      { title: "Google Cloud", hash: "#gcp", icon: SiGooglecloud, color: "#4285F4" },
+      { title: "Oracle Database", hash: "#oracle", icon: SiOracle, color: "#F80000" },
+      { title: "Azure SQL Database", hash: "#azure", icon: SiMicrosoftazure, color: "#0089D6" },
+      { title: "Compute & Clusters", hash: "#compute", icon: TbServer, color: "#8E44AD" },
+      { title: "Firebase", hash: "#firebase", icon: SiFirebase, color: "#FFCA28" },
+      { title: "DevOps", hash: "#devops", icon: TbInfinity, color: "#2ECC71" },
     ],
   },
 ] as const;
 
-export const skillsDataCMS = [
+export const skillsDataDataScience = [
   {
-    skillsTitle: "CMS",
+    skillsTitle: "Data Science & Analytics",
+    image: dataScienceIsometric,
     skills: [
-      {
-        title: "WordPress",
-        hash: "#WordPress",
-        icon: wordpressicon,
-        color: "#21759B",
-      },
-      {
-        title: "Shopify",
-        hash: "#Shopify",
-        icon: shopifyicon,
-        color: "#7AB55C",
-      },
-      {
-        title: "Webflow",
-        hash: "#Webflow",
-        icon: webflowicon,
-        color: "#4353FF",
-      },
+      { title: "SQL", hash: "#sql", icon: SiPostgresql, color: "#336791" },
+      { title: "Power BI", hash: "#powerbi", icon: SiPowerbi, color: "#F2C811" },
+      { title: "Tableau & Matplotlib", hash: "#dataviz", icon: SiTableau, color: "#E97627" },
+      { title: "Feature Engineering", hash: "#featureeng", icon: TbChartHistogram, color: "#27AE60" },
+      { title: "Business Intelligence", hash: "#bi", icon: TbChartPie, color: "#16A085" },
+      { title: "Statistical Analysis", hash: "#stats", icon: TbMathFunction, color: "#D35400" },
+    ],
+  },
+] as const;
+
+export const skillsDataSoftware = [
+  {
+    skillsTitle: "Software Development",
+    image: softwareDevIsometric,
+    skills: [
+      { title: "Python", hash: "#python", icon: SiPython, color: "#3776AB" },
+      { title: "JavaScript", hash: "#javascript", icon: SiJavascript, color: "#F7DF1E" },
+      { title: "Node.js", hash: "#nodejs", icon: SiNodedotjs, color: "#339933" },
+      { title: "Firebase", hash: "#firebase-dev", icon: SiFirebase, color: "#FFCA28" },
+      { title: "Git", hash: "#git", icon: SiGit, color: "#F05032" },
+      { title: "Docker", hash: "#docker", icon: SiDocker, color: "#2496ED" },
+      { title: "CI/CD Pipelines", hash: "#cicd", icon: SiGithubactions, color: "#2088FF" },
+      { title: "C++", hash: "#cplusplus", icon: SiCplusplus, color: "#00599C" },
+      { title: "Conda", hash: "#conda", icon: SiAnaconda, color: "#44A833" },
     ],
   },
 ] as const;

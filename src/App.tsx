@@ -16,6 +16,12 @@ function App() {
                 <Route path="/" element={<Home />}></Route>
                 <Route path="/en" element={<Home />}></Route>
                 <Route path="/de" element={<Home />}></Route>
+                <Route path="/l" element={<Home />}></Route>
+                <Route path="/d" element={<Home />}></Route>
+                <Route path="/en/l" element={<Home />}></Route>
+                <Route path="/en/d" element={<Home />}></Route>
+                <Route path="/de/l" element={<Home />}></Route>
+                <Route path="/de/d" element={<Home />}></Route>
                 <Route path="/imprint" element={<Home />}></Route>
                 <Route path="/privacy" element={<Home />}></Route>
                 <Route path="/en/imprint" element={<Home />}></Route>
