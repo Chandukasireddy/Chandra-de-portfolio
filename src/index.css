@@ -215,14 +215,34 @@ a {
   background-color: var(--lightblue);
 }
 
+body {
+  background-color: var(--icewhite);
+  color: var(--black);
+  transition: all ease-in 200ms;
+}
+
+.light body,
+.light .modal {
+  background-color: var(--icewhite);
+  color: var(--black);
+  transition: all ease-in 200ms;
+}
+
 .dark body,
 .dark .modal {
   background-color: var(--blackblue);
   color: var(--white);
   transition: all ease-in 200ms;
 }
-.light body {
-  transition: all ease-in 200ms;
+
+/* Placeholder text color styling for input elements to improve contrast */
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+.light input::placeholder,
+.light textarea::placeholder {
+  color: rgba(0, 0, 0, 0.4);
 }
 /* .dark a {
   color: var(--white);

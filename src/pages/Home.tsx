@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from "react";
 import Layout from "../layout/layout";
 import Footer from "../components/Footer";
 import ThemeSwitch from "../components/theme-switch";
+import AiChat from "../components/AiChat";
 import { useTheme } from "../context/theme-context";
 import { ScrollProgress } from "../components/ScrollProgress";
 import Divider from "../components/Divider";
@@ -23,6 +24,7 @@ const Home: React.FC = () => {
     <>
       <Layout>
         <ThemeSwitch />
+        <AiChat />
         <header className="h-screen">
           <ScrollProgress
             position={"left"}

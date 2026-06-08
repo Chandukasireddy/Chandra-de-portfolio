@@ -80,15 +80,15 @@ export const headerIntroData = {
     en: "Hi, I'm Chandrakiran Reddy Kasireddy",
   },
   subtitle: (
-   <div className="overflow-hidden whitespace-nowrap w-full">
+    <div className="overflow-hidden whitespace-nowrap w-full">
       <span className="scrolling-text inline-block">
-        🚀 AI & Machine Learning Engineer 🚀
+        AI Engineer
       </span>
-   </div>
+    </div>
   ),
   description: {
     de: "KI- und Machine-Learning-Ingenieur mit praktischer Bosch-Erfahrung im gesamten GenAI-Lebenszyklus, von der frühen Forschung und Erprobung bis hin zu produktionsreifen Systemen. Stärken in Python, LLMs und RAG-Engineering mit LangChain und Agno. Fokussiert auf den Aufbau zuverlässiger KI-Lösungen für industrielle Arbeitsabläufe.",
-    en: "AI and machine learning engineer with hands-on Bosch experience across the full GenAI lifecycle, from early research and testing to production-ready systems. Strong in Python, LLMs, and RAG engineering using LangChain and Agno. Focused on building reliable AI solutions for industrial workflows.",
+    en: "AI Engineer with hands-on Bosch experience across the full GenAI lifecycle, from early research and testing to production-ready systems. Strong in Python, LLMs, and RAG engineering using LangChain and Agno. Focused on building reliable AI solutions for industrial workflows.",
   },
   buttons: [
     {
@@ -111,7 +111,7 @@ export const headerIntroData = {
       color: "secondary-btn",
       // link: "https://github.com/Chandukasireddy", // GitHub Profile
     },
-  ],  
+  ],
   profilepicture: profilepicture,
 } as const;
 

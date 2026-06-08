@@ -1,13 +1,20 @@
 import "./App.css";
+import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import ActiveSectionContextProvider from "./context/active-section-context";
 import ThemeContextProvider from "./context/theme-context";
 import LanguageContextProvider from "./context/language-context";
+import Preloader from "./components/Preloader";
 
 function App() {
+  const [showPreloader, setShowPreloader] = useState(true);
+
   return (
     <>
+      {showPreloader && (
+        <Preloader onComplete={() => setShowPreloader(false)} />
+      )}
       <BrowserRouter>
         <ThemeContextProvider>
           <LanguageContextProvider>
@@ -39,3 +46,4 @@ function App() {
 }
 
 export default App;
+

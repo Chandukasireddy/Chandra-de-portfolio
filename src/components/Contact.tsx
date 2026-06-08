@@ -189,13 +189,13 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
               textAlign: "center",
             }}
           >
-            <p className="text-[--black] mb-6">
+            <p className={`${theme === "dark" ? "text-white" : "text-[--black]"} mb-6`}>
               <span className="text-[--orange]">&lt;</span>
               {language === "DE" ? contactData.title.de : contactData.title.en}
               <span className="text-[--orange]">/&gt;</span>
             </p>
 
-            <h2 className="text-[--black] text-center">
+            <h2 className={`${theme === "dark" ? "text-white" : "text-[--black]"} text-center`}>
               {language === "DE"
                 ? contactData.description.de
                 : contactData.description.en}

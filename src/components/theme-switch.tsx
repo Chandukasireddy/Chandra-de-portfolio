@@ -39,7 +39,7 @@ export default function ThemeSwitch() {
 
   return (
     <div
-      className={`fixed right-10  transition-all z-50
+      className={`fixed ${isMobile ? "right-10" : "left-10"} transition-all z-50
       ${
         isTooltipVisible ? "h-[24rem] w-[4rem] z-10" : " h-[4rem] w-[4rem] z-10"
       }
@@ -48,7 +48,7 @@ export default function ThemeSwitch() {
       onMouseLeave={() => setIsTooltipVisible(false)}
     >
       <button
-        className={`shortcut-btn fixed z-10 bottom-5 right-10  w-[4rem] h-[4rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950 ${
+        className={`shortcut-btn fixed z-10 bottom-5 ${isMobile ? "right-10" : "left-10"} w-[4rem] h-[4rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950 ${
           theme === "dark" ? "bg-[--darkblue]" : "bg-white"
         }
         ${isMobile ? "top-10" : "bottom-5"}
@@ -59,7 +59,7 @@ export default function ThemeSwitch() {
         {theme === "light" ? <BsSun /> : <BsMoon />}
       </button>
       <button
-        className={`shortcut-btn fixed -z-10 right-10  w-[4rem] h-[4rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950 ${
+        className={`shortcut-btn fixed -z-10 ${isMobile ? "right-10" : "left-10"} w-[4rem] h-[4rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950 ${
           theme === "dark" ? "bg-[--darkblue]" : "bg-white"
         }
         ${
@@ -85,7 +85,7 @@ export default function ThemeSwitch() {
         </Link>
       </button>
       <button
-        className={`shortcut-btn fixed -z-10  right-10  w-[4rem] h-[4rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950 ${
+        className={`shortcut-btn fixed -z-10 ${isMobile ? "right-10" : "left-10"} w-[4rem] h-[4rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950 ${
           theme === "dark" ? "bg-[--darkblue]" : "bg-white"
         }
         ${
@@ -110,7 +110,7 @@ export default function ThemeSwitch() {
         </Link>
       </button>
       <button
-        className={`shortcut-btn fixed -z-10  right-10  w-[4rem] h-[4rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950 ${
+        className={`shortcut-btn fixed -z-10 ${isMobile ? "right-10" : "left-10"} w-[4rem] h-[4rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950 ${
           theme === "dark" ? "bg-[--darkblue]" : "bg-white"
         }
         ${
