@@ -184,7 +184,7 @@ const ProjectSlider: React.FC = () => {
                     iconcolor={project.colors.icon}
                   />
                 </div>
-                <p className="text-white  max-lg:text-4xl">
+                <p className="text-white text-[1.6rem] sm:text-[1.8rem] lg:text-[2rem]">
                   {language === "DE"
                     ? project.description
                     : project.description_EN}

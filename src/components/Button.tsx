@@ -29,8 +29,7 @@ const Button: React.FC<ButtonProps> = ({
   const commonProps = {
     onClick,
     type,
-    className: `text-white drop-shadow-2xl border-none py-4 px-8 rounded-lg text-[1.6rem] transition-all duration-200 flex flex-row gap-4 justify-center items-center cursor-pointer ${buttoncolor} ${buttonhovercolor} max-lg:text-3xl max-lg:py-8 max-lg:px-16 max-lg:rounded-xl
-    shadow-xl hover:scale-100 hover:-translate-y-2 hover:drop-shadow-xl transition-all duration-200 w-max`,
+    className: `text-white drop-shadow-2xl border-none py-3 px-6 sm:py-4 sm:px-8 rounded-lg text-[1.4rem] sm:text-[1.6rem] transition-all duration-200 flex flex-row gap-3 sm:gap-4 justify-center items-center cursor-pointer ${buttoncolor} ${buttonhovercolor} shadow-xl hover:scale-100 hover:-translate-y-2 hover:drop-shadow-xl transition-all duration-200 w-max`,
   };
 
   if (elementType === "input") {

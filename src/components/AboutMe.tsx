@@ -111,7 +111,7 @@ const AboutMe: React.FC = () => {
                     </p>
                   </div>
                   <div>
-                    <p className="text-white text-4xl">
+                    <p className="text-white text-[1.6rem] sm:text-[1.8rem] lg:text-[2rem]">
                       {paragraph.description}
                     </p>
                   </div>

@@ -23,15 +23,17 @@ const HeaderIntro: React.FC = () => {
       <img
         src={headerIntroData.profilepicture}
         alt={headerIntroData.profilepicture}
-        className="w-1/6 drop-shadow-2xl rounded-full shadow-2xl avatar-img max-lg:w-3/4"
+        className="w-[140px] h-[140px] sm:w-[160px] sm:h-[160px] md:w-[180px] md:h-[180px] lg:w-[220px] lg:h-[220px] object-cover drop-shadow-2xl rounded-full shadow-2xl avatar-img"
       />
-      <h1>
+      <h1 className="text-[2.2rem] sm:text-[2.8rem] md:text-[3.6rem] text-center max-w-[90%] font-black leading-tight">
         {language === "DE"
           ? headerIntroData.title.de
           : headerIntroData.title.en}
-        <span className="wave text-7xl">&#128075;&#127996;</span>
+        <span className="wave text-[2.2rem] sm:text-[2.8rem] md:text-[3.6rem]">&#128075;&#127996;</span>
       </h1>
-      <h2>{headerIntroData.subtitle}</h2>
+      <h2 className="text-[1.6rem] sm:text-[2.2rem] md:text-[3rem] text-center max-w-[90%] font-bold leading-normal">
+        {headerIntroData.subtitle}
+      </h2>
       <p className="w-1/2 text-center max-lg:hidden">
         {language === "DE"
           ? headerIntroData.description.de

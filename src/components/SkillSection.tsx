@@ -55,7 +55,7 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
       <div
         className={`absolute top-10 left-1/2 transform -translate-x-1/2 px-4 py-2  rounded-t-xl `}
       >
-        <p className="font-black text-4xl">
+        <p className="font-black text-2xl sm:text-3xl lg:text-4xl">
           <span className="text-[--orange]">&lt;</span>
           {skillsData[0].skillsTitle}
           <span className="text-[--orange]">/&gt;</span>
@@ -92,9 +92,9 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
           <img
             src={getSkillIconSrc(theme, skill)}
             alt={`${skill.icon}-icon`}
-            className="h-[10rem]"
+            className="h-[5rem] sm:h-[7rem] md:h-[8rem] lg:h-[10rem] object-contain"
           />
-          <h3 className="max-lg:text-[2rem] min-[1024px]:hidden">
+          <h3 className="text-[1.4rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2rem] min-[1024px]:hidden">
             {skill.title}
           </h3>
         </div>
