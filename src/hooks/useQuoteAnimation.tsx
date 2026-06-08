@@ -23,6 +23,7 @@ export function useQuoteAnimation(quoteElementSelector: string) {
           const spaceSpan = document.createElement("span");
           spaceSpan.textContent = char;
           h2Element.appendChild(spaceSpan);
+          isInsideWord = false;
         } else {
           if (!isInsideWord) {
             const wordSpan = document.createElement("span");
