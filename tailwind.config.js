@@ -12,7 +12,7 @@ export default {
         darkblue: "#1a2238",
         blackblue: "#0c1220",
         orange: "#ff6a3d",
-        tastycolor: "#70B9BE",
+        graspinsgamescolor: "#a855f7",
         silentmooncolor: "#FFD5BD",
         instorcolor: "#E3964A",
       },

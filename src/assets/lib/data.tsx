@@ -5,17 +5,14 @@ import reacticon from "../../assets/icons/reacticon.png";
 import nodejsicon from "../../assets/icons/nodejsicon.png";
 import mongodbicon from "../../assets/icons/mongoicon.png";
 import figmaicon from "../../assets/icons/figmaicon.png";
-import canvaicon from "../../assets/icons/canvaicon.png";
 import trelloicon from "../../assets/icons/trelloicon.svg";
-import apiicon from "../../assets/icons/apiicon.svg";
 import axiosicon from "../../assets/icons/axiosicon.svg";
 import spotifyicon from "../../assets/icons/spotifyicon.svg";
-import netlifyicon from "../../assets/icons/netlifyicon.svg";
 import rendericon from "../../assets/icons/rendericon.svg";
 import jwticon from "../../assets/icons/jwticon.svg";
 import expressiconwhite from "../../assets/icons/expressicon.png";
 
-import tastyMockup from "../../assets/img/HeroImage1.jpg";
+import graspinsGamesMockup from "../../assets/img/graspins_games_banner.png";
 import instorMockup from "../../assets/img/veduka.png";
 import silentmoonMockup from "../../assets/img/HR-IT.webp";
 import meteorologyAnomaly from "../img/meteorology_anomaly.png";
@@ -71,7 +68,9 @@ import {
   TbChartHistogram,
   TbChartPie,
   TbAdjustments,
-  TbNetwork
+  TbNetwork,
+  TbVolume,
+  TbDatabase
 } from "react-icons/tb";
 
 export const headerIntroData = {
@@ -117,32 +116,28 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Tasty App",
+    title: "Graspins Games Portal",
     description:
-      "Eine Rezepte App, die wir als Team mit React und der MealDB API gebaut haben. Ich war der Front-End Entwickler und habe Features wie Voice Search oder Print to PDF programmiert. Das Design wurde mit Figma erstellt. Die Website ist responsive und mobile-optimiert.",
+      "Eine erstklassige, kuratierte Sammlung von serverlosen, in sich geschlossenen Worträtseln, Partyspielen, lokalen Brettspielen für zwei Spieler und nützlichen Werkzeugen. Alle Spiele laufen direkt im Webbrowser, ohne Backend-Anforderungen oder Framework-Overhead. Mit physikbasierten Animationen, 3D-Münzwürfen und dynamischer Web-Audio-Synthese.",
     description_EN:
-      "A recipe app that we built as a team with React and the MealDB API. I was the front-end developer and programmed features like voice search or print to PDF. The design was created with Figma. The website is responsive and mobile-optimized.",
+      "A premium, curated collection of serverless, self-contained word puzzles, party games, local two-player board games, and utility tools. All games run entirely inside the web browser with zero backend requirements or framework overhead, featuring physics-based animations, 3D coin tosses, and dynamic Web Audio synthesis.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
-      { name: "REST Api", icon: apiicon },
-      { name: "React", icon: reacticon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Canva", icon: canvaicon },
-      { name: "Netlify", icon: netlifyicon },
-      { name: "Trello", icon: trelloicon },
+      { name: "Web Audio API", icon: TbVolume },
+      { name: "Local Storage", icon: TbDatabase },
     ],
-    image: tastyMockup,
-    deploymenturl: "https://chandu.graspins.com",
-    githuburl: "https://github.com/Chandukasireddy",
+    image: graspinsGamesMockup,
+    deploymenturl: "https://games.graspins.com/",
+    githuburl: "https://github.com/Chandukasireddy/games_graspins",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
       main: "main-btn",
       second: "secondary-btn",
       icon: "white",
-      projectcolor: "#70B9BE",
+      projectcolor: "#a855f7",
     },
   },
   {
