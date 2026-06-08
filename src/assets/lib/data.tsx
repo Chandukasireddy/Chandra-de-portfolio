@@ -1,20 +1,10 @@
 import htmlicon from "../../assets/icons/htmlicon.png";
 import cssicon from "../../assets/icons/cssicon.png";
 import javascripticon from "../../assets/icons/javascripticon.png";
-import reacticon from "../../assets/icons/reacticon.png";
-import nodejsicon from "../../assets/icons/nodejsicon.png";
-import mongodbicon from "../../assets/icons/mongoicon.png";
-import figmaicon from "../../assets/icons/figmaicon.png";
-import trelloicon from "../../assets/icons/trelloicon.svg";
-import axiosicon from "../../assets/icons/axiosicon.svg";
-import spotifyicon from "../../assets/icons/spotifyicon.svg";
-import rendericon from "../../assets/icons/rendericon.svg";
-import jwticon from "../../assets/icons/jwticon.svg";
-import expressiconwhite from "../../assets/icons/expressicon.png";
 
 import graspinsGamesMockup from "../../assets/img/graspins_games_banner.png";
 import instorMockup from "../../assets/img/veduka.png";
-import silentmoonMockup from "../../assets/img/HR-IT.webp";
+import promptRefinerMockup from "../../assets/img/prompt_refiner_banner.png";
 import meteorologyAnomaly from "../img/meteorology_anomaly.png";
 import biopsyEnhancement from "../img/biopsy_enhancement.png";
 import profilepicture from "../img/HeroImage.jpg";
@@ -49,7 +39,9 @@ import {
   SiCplusplus,
   SiAnaconda,
   SiOpenai,
-  SiPostgresql
+  SiPostgresql,
+  SiGooglechrome,
+  SiGoogle
 } from "react-icons/si";
 
 import {
@@ -70,7 +62,9 @@ import {
   TbAdjustments,
   TbNetwork,
   TbVolume,
-  TbDatabase
+  TbDatabase,
+  TbApi,
+  TbCalendar
 } from "react-icons/tb";
 
 export const headerIntroData = {
@@ -141,60 +135,46 @@ export const projectsData = [
     },
   },
   {
-    title: "Silentmoon",
+    title: "Prompt Refiner Extension",
     description:
-      "Eine Yoga und Meditations App, die wir als Team mit React, MongoDB, Express und Node.js gebaut haben. Meine Aufgabe als Gitmaster und Backend Entwickler bestand darin, das Backend mit Anbindung anhand einer Restful API zu programmieren und die Datenbank in MongoDB zu modellieren.",
+      "Eine Chrome-Erweiterung, die mithilfe von Gemini Flash einfache Eingabeaufforderungen (Prompts) in präzise, detaillierte und effektive Anweisungen umwandelt. Sie verfügt über eine manuelle Popup-Benutzeroberfläche und eine intelligente Inline-Integration, die einen 'Refine'-Button in Textbereiche von gängigen AI-Tools (wie ChatGPT, Claude und Gemini) einfügt.",
     description_EN:
-      "A yoga and meditation app that we built as a team with React, MongoDB, Express and Node.js. My task as a gitmaster and backend developer was to program the backend with connection using a restful API and to model the database in MongoDB.",
+      "A Chrome extension that transforms draft prompts into high-quality, detailed instructions using Gemini Flash. It features a manual popup UI and smart on-page integration that automatically adds a 'Refine' button to text inputs on popular AI platforms like ChatGPT, Claude, and Gemini.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
-      { name: "Spotify Api", icon: spotifyicon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
+      { name: "Chrome Extension API", icon: SiGooglechrome },
+      { name: "Gemini API", icon: SiGoogle },
     ],
-    image: silentmoonMockup,
-    deploymenturl: "https://chandu.graspins.com/",
-    githuburl:
-      "https://github.com/Chandukasireddy",
+    image: promptRefinerMockup,
+    deploymenturl: "https://github.com/Chandukasireddy/prompt-refine-extenstion",
+    githuburl: "https://github.com/Chandukasireddy/prompt-refine-extenstion",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
       main: "main-btn",
       second: "secondary-btn",
       icon: "white",
-      projectcolor: "#FFD5BD",
+      projectcolor: "#0ea5e9",
     },
   },
   {
-    title: "Furniture Organizer",
+    title: "Veduka Restaurant",
     description:
-      "Eine Möbel-Organizer App, die wir als Duo-Team mit React, MongoDB, Express und Node.js programmiert haben. Als Gitmaster habe ich die Verknüpfung des Frontends mit dem Backend und die Datenbankmodellierung übernommen. Die App ist responsive und mobile-optimiert.",
+      "Eine Restaurant-Website für Veduka, bei der ich die gesamte Website entworfen und entwickelt habe. Features beinhalten Tischreservierungssysteme und die Integration von in den USA ansässigen Essenslieferungs-APIs (wie Grubhub, Uber Eats usw.). Zudem habe ich das gesamte digitale Marketing und die SEO-Optimierung verwaltet.",
     description_EN:
-      "A furniture organizer app that we programmed as a duo team with React, MongoDB, Express and Node.js. As a gitmaster, I took over the connection of the frontend to the backend and the database modeling. The app is responsive and mobile-optimized.",
+      "A restaurant website for Veduka, where I designed and developed the entire website. Features include table reservation systems and connecting US-based food delivery APIs (such as Grubhub, Uber Eats, etc.). I also managed the entire digital marketing strategy and SEO optimization.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
-      { name: "Trello", icon: trelloicon },
+      { name: "API Integration", icon: TbApi },
+      { name: "Reservations", icon: TbCalendar },
+      { name: "SEO & Marketing", icon: TbSearch },
     ],
     image: instorMockup,
-    deploymenturl: "https://chandu.graspins.com/",
+    deploymenturl: "https://www.vedukarestaurant.com",
     githuburl: "https://github.com/Chandukasireddy",
     githubicon: FiGithub,
     deploymenticon: FiLink,
