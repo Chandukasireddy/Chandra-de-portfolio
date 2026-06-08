@@ -51,7 +51,7 @@ const Home: React.FC = () => {
               dividerStyle="solid"
             />
 
-            <LazyTechStack />
+            <LazyAboutMe />
             <Divider
               thickness="0.25rem"
               direction="inner-right-to-middle"
@@ -72,7 +72,9 @@ const Home: React.FC = () => {
               height="extraLarge"
               dividerStyle="solid"
             />
-            <ProjectSlider />
+
+            <LazyTechStack />
+
             <div className="relative -mb-24 pb-32 -mt-10">
               <LazyRadialGradient
                 opacity={theme === "light" ? "opacity-30" : "opacity-30"}
@@ -87,7 +89,7 @@ const Home: React.FC = () => {
                 dividerStyle="solid"
               />
 
-              <LazyAboutMe />
+              <ProjectSlider />
               <Divider
                 thickness="0.25rem"
                 direction="inner-left-to-middle"

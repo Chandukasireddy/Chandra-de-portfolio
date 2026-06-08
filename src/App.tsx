@@ -14,8 +14,15 @@ function App() {
             <ActiveSectionContextProvider>
               <Routes>
                 <Route path="/" element={<Home />}></Route>
+                <Route path="/en" element={<Home />}></Route>
+                <Route path="/de" element={<Home />}></Route>
                 <Route path="/imprint" element={<Home />}></Route>
                 <Route path="/privacy" element={<Home />}></Route>
+                <Route path="/en/imprint" element={<Home />}></Route>
+                <Route path="/de/imprint" element={<Home />}></Route>
+                <Route path="/en/privacy" element={<Home />}></Route>
+                <Route path="/de/privacy" element={<Home />}></Route>
+                <Route path="*" element={<Home />}></Route>
               </Routes>
             </ActiveSectionContextProvider>
           </LanguageContextProvider>

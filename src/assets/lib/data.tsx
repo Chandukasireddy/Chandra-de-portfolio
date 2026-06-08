@@ -306,9 +306,9 @@ export const skillsDataCMS = [
 
 export const navLinks = [
   { de: "Home", en: "Home", hash: "#home", icon: GoHome },
+  { de: "Über mich", en: "About me", hash: "#about-me", icon: GoPerson },
   { de: "Skills", en: "Skills", hash: "#skills", icon: GoStack },
   { de: "Projekte", en: "Projects", hash: "#projects", icon: GoProject },
-  { de: "Über mich", en: "About me", hash: "#about-me", icon: GoPerson },
   { de: "Kontakt", en: "Contact", hash: "#contact", icon: GoMail },
 ] as const;
 
