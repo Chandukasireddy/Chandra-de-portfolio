@@ -20,6 +20,19 @@ export default defineConfig({
           minSize: 1024, // Mindestgröße der komprimierten Datei in Bytes
         }),
       ],
+      output: {
+        manualChunks(id) {
+          if (id.includes("node_modules")) {
+            if (id.includes("react-icons")) {
+              return "vendor-icons";
+            }
+            if (id.includes("framer-motion") || id.includes("gsap")) {
+              return "vendor-animation";
+            }
+            return "vendor";
+          }
+        },
+      },
     },
   },
 });
