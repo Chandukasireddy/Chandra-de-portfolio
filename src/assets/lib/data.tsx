@@ -18,6 +18,8 @@ import expressiconwhite from "../../assets/icons/expressicon.png";
 import tastyMockup from "../../assets/img/HeroImage1.jpg";
 import instorMockup from "../../assets/img/veduka.png";
 import silentmoonMockup from "../../assets/img/HR-IT.webp";
+import meteorologyAnomaly from "../img/meteorology_anomaly.png";
+import biopsyEnhancement from "../img/biopsy_enhancement.png";
 import profilepicture from "../img/HeroImage.jpg";
 import caricon from "../../assets/icons/car-icon.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
@@ -68,7 +70,8 @@ import {
   TbDatabaseSearch,
   TbChartHistogram,
   TbChartPie,
-  TbAdjustments
+  TbAdjustments,
+  TbNetwork
 } from "react-icons/tb";
 
 export const headerIntroData = {
@@ -79,13 +82,13 @@ export const headerIntroData = {
   subtitle: (
    <div className="overflow-hidden whitespace-nowrap w-full">
       <span className="scrolling-text inline-block">
-        🚧 Work in Progress.. Updates Coming Soon! 🚀
+        🚀 AI & Machine Learning Engineer 🚀
       </span>
    </div>
   ),
   description: {
-    de: "Ich bin Chandrakiran Reddy Kasireddy, ein KI- und Cloud-Enthusiast, der sich der Lösung realer Herausforderungen mit modernster Technologie verschrieben hat. Vom Aufbau florierender Tech-Communities bis hin zur Betreuung von Startups – ich glaube an Innovation, Zusammenarbeit und wirkungsorientiertes Wachstum!",
-    en: "I'm Chandrakiran Reddy Kasireddy, an AI and Cloud enthusiast dedicated to solving real-world challenges with cutting-edge technology. From leading thriving tech communities to mentoring startups, I believe in innovation, collaboration, and impact-driven growth!",
+    de: "KI- und Machine-Learning-Ingenieur mit praktischer Bosch-Erfahrung im gesamten GenAI-Lebenszyklus, von der frühen Forschung und Erprobung bis hin zu produktionsreifen Systemen. Stärken in Python, LLMs und RAG-Engineering mit LangChain und Agno. Fokussiert auf den Aufbau zuverlässiger KI-Lösungen für industrielle Arbeitsabläufe.",
+    en: "AI and machine learning engineer with hands-on Bosch experience across the full GenAI lifecycle, from early research and testing to production-ready systems. Strong in Python, LLMs, and RAG engineering using LangChain and Agno. Focused on building reliable AI solutions for industrial workflows.",
   },
   buttons: [
     {
@@ -205,6 +208,54 @@ export const projectsData = [
       second: "secondary-btn",
       icon: "white",
       projectcolor: "#E3964A",
+    },
+  },
+  {
+    title: "Anomaly Detection in Meteorology",
+    description:
+      "Entwicklung von Modellen zur Erkennung ungewöhnlicher Wettermuster unter Verwendung von k-NN und Autoencodern zur Bereitstellung von Frühwarnungen für ein besseres Katastrophenmanagement.",
+    description_EN:
+      "Developed models to detect unusual weather patterns using k-NN and autoencoders. The models provide early warnings which help in better planning for weather-related disasters.",
+    technologies: [
+      { name: "Python", icon: SiPython },
+      { name: "Scikit-Learn", icon: TbAdjustments },
+      { name: "Matplotlib", icon: TbChartHistogram },
+      { name: "Anaconda", icon: SiAnaconda },
+    ],
+    image: meteorologyAnomaly,
+    deploymenturl: "https://github.com/Chandukasireddy",
+    githuburl: "https://github.com/Chandukasireddy",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#72B680",
+    },
+  },
+  {
+    title: "Low-Light Biopsy Image Enhancement",
+    description:
+      "Verbesserung der Sichtbarkeit und Genauigkeit von Biopsiebildern unter schwierigen Lichtverhältnissen durch Histogrammausgleich, Computer Vision und Filterung zur Rauschunterdrückung.",
+    description_EN:
+      "Enhanced visibility and accuracy of biopsy images in challenging low-lighting conditions. Utilized histogram equalization, computer vision, and filtering to improve quality and reduce noise.",
+    technologies: [
+      { name: "Python", icon: SiPython },
+      { name: "Computer Vision", icon: TbEye },
+      { name: "Deep Learning", icon: TbNetwork },
+      { name: "OpenCV", icon: TbSearch },
+    ],
+    image: biopsyEnhancement,
+    deploymenturl: "https://github.com/Chandukasireddy",
+    githuburl: "https://github.com/Chandukasireddy",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#E2C843",
     },
   },
 ] as const;
@@ -611,3 +662,250 @@ export const widthStyles: Record<string, { widths: [string, string] }> = {
     widths: ["0%", "0%"],
   },
 };
+
+export const resumeData = {
+  experience: {
+    de: [
+      {
+        role: "Werkstudent – Generative AI",
+        company: "Robert Bosch",
+        location: "Stuttgart, Deutschland",
+        date: "Dez 2025 – Mai 2026",
+        points: [
+          "Entwicklung eines PLM Windchill GenAI Test-Assistenten unter Verwendung von RAG- und Vektorraumsuch-Workflows, bereitgestellt auf einer VM mit stabilen APIs und Zuverlässigkeitskontrollen.",
+          "Definition mehrstufiger LLM-Evaluierungsmetriken für Abrufrelevanz, Antwortqualität, Halluzinationsrate, Latenz und Kosten zur Steuerung von Produktionsverbesserungen."
+        ]
+      },
+      {
+        role: "Gen AI Intern",
+        company: "Robert Bosch",
+        location: "Stuttgart, Deutschland",
+        date: "Jun 2025 – Nov 2025",
+        points: [
+          "Übersetzung von PLM Windchill-Anforderungen in technischen Scope, Validierungsszenarien und Erfolgskriterien, gefolgt von einem Vergleich zwischen Fine-Tuning und RAG zur Auswahl des besten Ansatzes.",
+          "Bewertung von Chunking-, Embedding- und Retrieval-Strategien und Bereitstellung einer robusten RAG-Baseline, die später für die Produktion skaliert wurde."
+        ]
+      },
+      {
+        role: "Gründer",
+        company: "Graspins Pvt Ltd",
+        location: "Hyderabad, Indien",
+        date: "Mär 2024 – Sep 2024",
+        points: [
+          "Gründung eines Unternehmens für digitale Lösungen mit Fokus auf KI-gestützte Business Intelligence und Full-Stack-Produkte.",
+          "Entwicklung und Implementierung von LLM-basierten Agenten und Chatbots zur Automatisierung von Kunden-Workflows."
+        ]
+      },
+      {
+        role: "Associate Engineer",
+        company: "I K Technologies",
+        location: "Hyderabad, Indien",
+        date: "Aug 2023 – Dez 2023",
+        points: [
+          "Entwicklung eines Anwesenheitssystems mit Computer Vision basierend auf CCTV-Analysen (92% Genauigkeit).",
+          "Aufbau von SQL Server- und Cloud-Datenpipelines für Echtzeit-Analysen und Berichterstattung."
+        ]
+      }
+    ],
+    en: [
+      {
+        role: "Werkstudent – Generative AI",
+        company: "Robert Bosch",
+        location: "Stuttgart, Germany",
+        date: "Dec 2025 – May 2026",
+        points: [
+          "Developed a PLM Windchill GenAI Testing assistant using RAG and vector-space retrieval workflows, deployed it on a VM with stable APIs and reliability controls.",
+          "Defined multi-stage LLM evaluation metrics covering retrieval relevance, response quality, hallucination rate, latency, and cost to guide production performance improvements."
+        ]
+      },
+      {
+        role: "Gen AI Intern",
+        company: "Robert Bosch",
+        location: "Stuttgart, Germany",
+        date: "Jun 2025 – Nov 2025",
+        points: [
+          "Translated PLM Windchill requirements into technical scope, validation scenarios, and success criteria, then compared fine-tuning vs RAG to select the best approach based on accuracy, maintainability, and delivery speed.",
+          "Evaluated chunking, embedding, and retrieval strategies and delivered a robust RAG baseline that was later scaled for production use."
+        ]
+      },
+      {
+        role: "Founder",
+        company: "Graspins Pvt Ltd",
+        location: "Hyderabad, India",
+        date: "Mar 2024 – Sep 2024",
+        points: [
+          "Founded a digital solutions company focused on AI-driven business intelligence and full-stack products.",
+          "Built and deployed LLM-based agents and chatbots to automate customer workflows."
+        ]
+      },
+      {
+        role: "Associate Engineer",
+        company: "I K Technologies",
+        location: "Hyderabad, India",
+        date: "Aug 2023 – Dec 2023",
+        points: [
+          "Built a computer vision attendance system using CCTV analytics (92% accuracy).",
+          "Developed SQL Server and cloud data pipelines for real-time analytics and reporting."
+        ]
+      }
+    ]
+  },
+  education: {
+    de: [
+      {
+        degree: "Master in Künstlicher Intelligenz",
+        institution: "Brandenburgische Technische Universität Cottbus-Senftenberg",
+        location: "Cottbus, Deutschland",
+        date: "Okt 2024 – Gegenwart"
+      },
+      {
+        degree: "Bachelor in Informatik (CSE) – Künstliche Intelligenz und Maschinelles Lernen",
+        institution: "Guru Nanak Institutions Technical Campus",
+        location: "Hyderabad, Indien",
+        date: "Nov 2020 – Mai 2024"
+      }
+    ],
+    en: [
+      {
+        degree: "Masters in Artificial Intelligence",
+        institution: "Brandenburg University of Technology",
+        location: "Cottbus, Germany",
+        date: "Oct 2024 – Present"
+      },
+      {
+        degree: "Bachelors in CSE – Artificial Intelligence and Machine Learning",
+        institution: "Guru Nanak Institutions Technical Campus",
+        location: "Hyderabad, India",
+        date: "Nov 2020 – May 2024"
+      }
+    ]
+  },
+  responsibilities: {
+    de: [
+      {
+        role: "Präsidium des Studierendenparlaments (StuPa)",
+        organization: "BTU Cottbus-Senftenberg",
+        date: "Jul 2025 – Gegenwart",
+        points: [
+          "Vertretung der Legislative gegenüber Universitätsakteuren und Verwaltung aller Protokolle.",
+          "Überwachung des Betriebs und Streitbeilegung bei gleichzeitiger Wahrung der parlamentarischen Rechte."
+        ]
+      },
+      {
+        role: "Chair Person",
+        organization: "IEEE Student Branch",
+        date: "Okt 2023 – Aug 2024",
+        points: [
+          "Aufbau einer starken Forschungsgemeinschaft am GNI, was zu einer Steigerung der studentischen Forschungsprojekte um 40% führte und die Veröffentlichung von über 50 Arbeiten unterstützte.",
+          "Gründung und Leitung technischer Fachbereiche, Einbindung von über 100 Fach- und Studentenmitgliedern und Organisation von mehr als 10 technischen Workshops."
+        ]
+      },
+      {
+        role: "Community Lead",
+        organization: "Google Developer Student Clubs (DSC)",
+        date: "Jul 2022 – Aug 2023",
+        points: [
+          "Leitung einer über 3000 Mitglieder zählenden Tech-Community, Organisation von Workshops, Hackathons und Mentorenprogrammen in Webentwicklung, KI, Blockchain und Cloud Computing (GCP)."
+        ]
+      },
+      {
+        role: "Gründer & Community Manager",
+        organization: "Feliks Club",
+        date: "Mär 2022 – Dez 2023",
+        points: [
+          "Gründung und Leitung eines dynamischen Teams aus 25 Personen, Organisation von über 30 Events wie Hackathons, Startup-Challenges, Code-Jams und Bootcamps."
+        ]
+      }
+    ],
+    en: [
+      {
+        role: "Prasidium Das Studierendenparlament (StuPa)",
+        organization: "Brandenburg University of Technology Cottbus-Senftenberg",
+        date: "Jul 2025 – Present",
+        points: [
+          "Represent the legislative body to university stakeholders and manage all protocols.",
+          "Oversee operations and dispute resolution while safeguarding parliamentary rights."
+        ]
+      },
+      {
+        role: "Chair Person",
+        organization: "IEEE Student Branch",
+        date: "Oct 2023 – Aug 2024",
+        points: [
+          "Established a strong research community at GNI, leading to a 40% rise in student-led research projects and supporting 50+ paper publications.",
+          "Launched and led technical societies, engaging 100+ professional and student members and organizing 10+ technical workshops."
+        ]
+      },
+      {
+        role: "Community Lead",
+        organization: "Google DSC",
+        date: "Jul 2022 – Aug 2023",
+        points: [
+          "Led a 3000+ member tech community, organizing workshops, hackathons, and mentorship programs in web development, AI, blockchain, and cloud computing (GCP), fostering innovation, industry collaboration, and career growth."
+        ]
+      },
+      {
+        role: "Founder | Community Manager",
+        organization: "Feliks Club",
+        date: "Mar 2022 – Dec 2023",
+        points: [
+          "Founded and managed a dynamic team of 25 individuals, organizing 30+ events including hackathons, startup challenges, workshops, code jams, boot camps, and tech talks, fostering a culture of innovation and collaboration."
+        ]
+      }
+    ]
+  },
+  publications: {
+    de: [
+      {
+        title: "Digital Emotions using Sentiment Analysis for Predictive Insights on Customer Recommendations",
+        publisher: "IEEE 5th India Council International Subsections Conference (INDISCON) 2024"
+      },
+      {
+        title: "Statistical Deep Learning Enhancements for Automated Cell Counting using CNNs and Ensemble Methods",
+        publisher: "International Journal of Science & Engineering Development Research - IJSDR"
+      }
+    ],
+    en: [
+      {
+        title: "Digital Emotions using Sentiment Analysis for Predictive Insights on Customer Recommendations",
+        publisher: "IEEE 5th India Council International Subsections Conference (INDISCON) 2024"
+      },
+      {
+        title: "Statistical Deep Learning Enhancements for Automated Cell Counting using CNNs and Ensemble Methods",
+        publisher: "International Journal of Science & Engineering Development Research - IJSDR"
+      }
+    ]
+  },
+  achievements: {
+    de: [
+      { title: "Google Cloud Digital Leader", desc: "Zertifiziertes Verständnis der Kernlösungen von Google Cloud" },
+      { title: "IBM Data Science Coursera", desc: "Professionelles Zertifikat - 10-teilige Kursreihe" },
+      { title: "Best Startup Pitch Award", desc: "Für findyourbelongings.com, ein Portal für soziale Zwecke an der IITH" },
+      { title: "IJRTI Publikation", desc: "Hybride Algorithmen zur Optimierung der Extraktion von Gelände-Merkmalen" },
+      { title: "EUNICE Challenge Gewinner", desc: "Optimierung der zukünftigen Belegschaft für den Industriepark Schwarze Pumpe" },
+      { title: "E-CELL IIT Bombay", desc: "Campus Botschafter für die Entrepreneurship Community" }
+    ],
+    en: [
+      { title: "Google Cloud Digital Leader", desc: "Certifies understanding of Google Cloud core solutions" },
+      { title: "IBM Data Science Coursera", desc: "Professional Certificate - 10 course series" },
+      { title: "Best Startup Pitch Award", desc: "For findyourbelongings.com, a social cause portal at IITH" },
+      { title: "IJRTI Publication", desc: "Hybrid algorithms to optimize terrain feature extraction" },
+      { title: "EUNICE Challenge Winner", desc: "Optimized future workforce for Industrial Park Schwarze Pumpe" },
+      { title: "E-CELL IIT Bombay", desc: "Campus Ambassador for Entrepreneurship community" }
+    ]
+  },
+  languages: {
+    de: [
+      { name: "Englisch", level: "Fließend (Proficient)", percent: 95 },
+      { name: "Hindi", level: "Fließend (Fluent)", percent: 90 },
+      { name: "Telugu", level: "Muttersprache (Native)", percent: 100 },
+      { name: "Deutsch", level: "Grundkenntnisse (Basic)", percent: 30 }
+    ],
+    en: [
+      { name: "English", level: "Proficient", percent: 95 },
+      { name: "Hindi", level: "Fluent", percent: 90 },
+      { name: "Telugu", level: "Native", percent: 100 },
+      { name: "German", level: "Basic", percent: 30 }
+    ]
+  }
+} as const;

@@ -115,14 +115,28 @@ const ProjectSlider: React.FC = () => {
                       <div className="grid grid-cols-6 gap-10 p-4">
                         {project.technologies.map(
                           (technology, innerIndex: number) => (
-                            <img
-                              key={innerIndex}
-                              src={technology.icon}
-                              alt={`${project.title}-icon`}
-                              className="h-[5rem] w-[60%] "
-                              data-tooltip-id="my-tooltip"
-                              data-tooltip-content={technology.name}
-                            />
+                            typeof technology.icon === "string" ? (
+                              <img
+                                key={innerIndex}
+                                src={technology.icon}
+                                alt={`${project.title}-icon`}
+                                className="h-[5rem] w-[60%] object-contain"
+                                data-tooltip-id="my-tooltip"
+                                data-tooltip-content={technology.name}
+                              />
+                            ) : (
+                              <div
+                                key={innerIndex}
+                                className="flex justify-center items-center h-[5rem] w-[60%]"
+                                data-tooltip-id="my-tooltip"
+                                data-tooltip-content={technology.name}
+                              >
+                                {React.createElement(technology.icon, {
+                                  className: "w-12 h-12",
+                                  style: { color: "var(--lightblue)" }
+                                })}
+                              </div>
+                            )
                           )
                         )}
                       </div>
@@ -197,14 +211,28 @@ const ProjectSlider: React.FC = () => {
                   <div className="grid grid-cols-3 gap-10 p-4">
                     {project.technologies.map(
                       (technology, innerIndex: number) => (
-                        <img
-                          key={innerIndex}
-                          src={technology.icon}
-                          alt={`${project.title}-icon`}
-                          className="h-[5rem] w-[60%] "
-                          data-tooltip-id="my-tooltip"
-                          data-tooltip-content={technology.name}
-                        />
+                        typeof technology.icon === "string" ? (
+                          <img
+                            key={innerIndex}
+                            src={technology.icon}
+                            alt={`${project.title}-icon`}
+                            className="h-[5rem] w-[60%] "
+                            data-tooltip-id="my-tooltip"
+                            data-tooltip-content={technology.name}
+                          />
+                        ) : (
+                          <div
+                            key={innerIndex}
+                            className="flex justify-center items-center h-[5rem] w-[60%]"
+                            data-tooltip-id="my-tooltip"
+                            data-tooltip-content={technology.name}
+                          >
+                            {React.createElement(technology.icon, {
+                              className: "w-10 h-10",
+                              style: { color: "var(--lightblue)" }
+                            })}
+                          </div>
+                        )
                       )
                     )}
                   </div>
